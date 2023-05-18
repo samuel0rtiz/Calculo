@@ -1,0 +1,28 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-21.72,
+xmax=21.72,
+ymin=-10.27,
+ymax=10.27,
+xtick={-21,-20,...,21},
+ytick={-10,-9,...,10},]
+\clip(-21.72,-10.27) rectangle (21.72,10.27);
+\draw[line width=2pt,color=qqwuqq,smooth,samples=100,domain=-21.72:21.72] plot(\x,{(\x)^(2)});
+\begin{scriptsize}
+\draw[color=qqwuqq] (-3.1,10.02) node {$f$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}
