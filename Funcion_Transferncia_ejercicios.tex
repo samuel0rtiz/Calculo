@@ -1,0 +1,181 @@
+\documentclass[english,10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\title{Ejercicios de Funcion de Transferencia
+}
+\author{Sanuel Ortiz}
+\begin{document}
+	\maketitle
+	\title{Determinar los ceros y los polos de las siguientes funciones de transferencia y gratificarlos en el plano complejo ,decir s el sistema es \emph{estable} o \emph{inestable} }
+	
+	\begin{enumerate}
+		\item {La funcion $F(s)=\frac{(s+3)}{s^2+4}$ Determinar si el sistema es estable o inestable\\
+			$F(s)=\frac{(s+3)}{s^{2}+4}$
+			\vspace{1cm}
+			$s^{2}+4=0$\hspace{1cm} $s= \frac{ -b \pm \sqrt{ b^{2} – 4ac }  } { 2a  }$\\
+			$s=0\pm\frac{\sqrt{0^{2}-4(1)(4)}}{2(1)}$\hspace{1cm}$s=\pm\frac{\sqrt{-16}}{2}$\\
+			
+			$s=\pm\frac{\sqrt{-1\sqrt{16}}}{2}$\hspace{1cm}$s=\pm2j$\hspace{1cm}
+			$s_{1}=s2$  \&  $s_{2}=-2j$\\
+		\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
+		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+		\begin{tikzpicture}[scale=1]
+			\begin{axis}[
+				x=1cm,y=1cm,
+				axis lines=middle,
+				xmin=-4.859844622338963,
+				xmax=4.568031096986715,
+				ymin=-4.896267214204027,
+				ymax=4.058038011681392,
+				xtick={-4,-5,...,4},
+				ytick={-4,-3,...,4},]
+				\clip(-11.859844622338963,-4.896267214204027) rectangle (12.568031096986715,6.058038011681392);
+				\begin{scriptsize}
+					\draw [color=uuuuuu] (0,0) circle (2pt);
+					\draw[color=uuuuuu] (0.09541867860173397,0.21536700054435365) node {$A$};
+					\draw [color=xdxdff] (-2,0)-- ++(-2.5pt,-2.5pt) -- ++(5pt,5pt) ++(-5pt,0) -- ++(5pt,-5pt);
+					\draw[color=xdxdff] (-1.9064974715087497,0.2378604404332354) node {$B$};
+					\draw [color=xdxdff] (2,0)-- ++(-2.5pt,-2.5pt) -- ++(5pt,5pt) ++(-5pt,0) -- ++(5pt,-5pt);
+					\draw[color=xdxdff] (2.0860881087677767,0.2378604404332354) node {$C$};
+				\end{scriptsize}
+			\end{axis}
+		\end{tikzpicture}\\
+		\emph{No es estable}
+			  
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		\newpage
+		\item {La funcion $Ft=\frac{/s+3}{s^{3}+2s^{2}-s-2 }$ Determina el estado del sistema.\\
+			$Ft=\frac{s+3}{s^{3}+2s^{2}-s-2}$\hspace{1cm}$s=0\pm\frac{\sqrt{0^{2}-4(1)(1)}}{2(1)}$\\
+			\vspace*{1cm}
+			$=\pm\frac{\sqrt{-4}}{2}$\hspace{1cm}$=\pm2j$\\
+			\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+			\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
+			\begin{tikzpicture}[scale=1]
+				\begin{axis}[
+					x=1cm,y=1cm,
+					axis lines=middle,
+					xmin=-4.866612251448528,
+					xmax=4.493066451083741,
+					ymin=-4.3022610598856765,
+					ymax=4.627496407388122,
+					xtick={-5,-4,...,5},
+					ytick={-5,-4,...,5},]
+					\clip(-6.866612251448528,-7.3022610598856765) rectangle (7.493066451083741,8.627496407388122);
+					\begin{scriptsize}
+						\draw [color=xdxdff] (-1,0)-- ++(-4pt,-4pt) -- ++(8pt,8pt) ++(-8pt,0) -- ++(8pt,-8pt);
+						\draw[color=xdxdff] (-0.8643319737385702,0.44182534745944) node {$A$};
+						\draw [color=xdxdff] (3,0)-- ++(-4pt,-4pt) -- ++(8pt,8pt) ++(-8pt,0) -- ++(8pt,-8pt);
+						\draw[color=xdxdff] (3.1262848866462516,0.44182534745944) node {$B$};
+						\draw [color=ududff] (3,2) circle (4pt);
+						\draw[color=ududff] (3.1262848866462516,2.4534887647845705) node {$C$};
+						\draw [color=ududff] (3,-2) circle (4pt);
+						\draw[color=ududff] (3.1262848866462516,-1.553483082732966) node {$D$};
+					\end{scriptsize}
+				\end{axis}
+			\end{tikzpicture}\\
+			\emph{Es estable}
+
+			
+			
+			
+			
+		
+
+		}
+		\newpage
+		\item  {$Ft=\frac{s-1}{s^{2}-4s+4 }$\\
+			
+			$s^{2}-4s+4$\\
+			
+			$s^2-4s+4=0$\\
+			$(s-2)(s-2)=0$
+			$s=2$ \& $s=2$\\
+			\begin{tikzpicture}[scale=1]
+				\begin{axis}[
+					x=1cm,y=1cm,
+					axis lines=middle,
+					xmin=-4.779999999999998,
+					xmax=4.779999999999998,
+					ymin=-4.74,
+					ymax=4.74,
+					xtick={-8,-7,...,8},
+					ytick={-9,-8,...,9},]
+					\clip(-8.78,-9.74) rectangle (8.78,9.74);
+					\begin{scriptsize}
+						\draw [fill=black] (2,2) circle (2.5pt);
+						\draw[color=black] (2.16,2.43) node {$A$};
+					\end{scriptsize}
+				\end{axis}
+			\end{tikzpicture}\\
+			\emph{Es inestable y (estable) al borde}
+			
+			
+			
+			
+		}
+		\newpage
+		\item{$Ft=\frac{1}{s^{2}+s+1}$\\
+
+			$s^{2}+s+1=0$\\
+			$s^{2}+s+1=$\\
+			$(1)(1)(1)$\\
+			$s=-1\pm\frac{\sqrt{1-4(1)(1)}}   {2(1)}$\\
+			$=\frac{-1\pm\sqrt{-3}}{2}$\\
+			$\frac{1\pm\sqrt{-3}}{2}$\\
+			$\frac{-1\pm\sqrt{3i}}{2}$\\
+			$s=\frac{-1+\sqrt{3i}}{2}$\hspace{1cm}$s=\frac{-1-\sqrt{-3i}}{2}$\\
+			\vspace{1cm}
+			\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+			\begin{tikzpicture}[scale=1]
+				\begin{axis}[
+					x=1cm,y=1cm,
+					axis lines=middle,
+					xmin=-4.103666195352159,
+					xmax=4.5093605737904765,
+					ymin=-4.093354652506949,
+					ymax=4.11745180893371,
+					xtick={0},
+					ytick={0},
+]
+					\clip(-7.103666195352159,-7.093354652506949) rectangle (7.5093605737904765,9.11745180893371);
+					\begin{scriptsize}
+						\draw [color=ududff] (3,-2) circle (4pt);
+						\draw[color=ududff] (3.1321099584322614,-1.5427345756173598) node {$i$};
+					\end{scriptsize}
+				\end{axis}
+			\end{tikzpicture}\\
+			\emph{es inestable}
+			
+			
+			
+			
+			
+			
+			
+			
+				
+			
+			
+		}
+
+
+	\end{enumerate}
+	
+\end{document}
