@@ -3,6 +3,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 \usepackage{graphicx}
+\usepackage{cancel}
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.15}
@@ -28,22 +29,22 @@
 		\vspace{3cm}
 		{\itshape\Large Proyecto Fin de semestre \par}
 		\vfill
-		{\Large Autor: \par}
-		{\Large Samuel Ortiz \par}
+		{\Large Autores: \par}
+		{\Large Samuel Ortiz \& Axel Rebollo \& Alonso Bernal \& Eduardo De Rosas\par}
 		\vfill
-		{\Large Junio 2020 \par}
+		{\Large Mayo 2023 \par}
 		\end{titlepage}
 		\newpage
 		
 		
 	\begin{titlepage}
 		\centering 
-				{\bfseries\LARGE  Temario \par}
+%				{\bfseries\LARGE  Temario \par}
 				\tableofcontents
 
 \end{titlepage}
 \newpage
-\section{Unidad I}
+\section{Funciones I}
 	\subsection{Tipos de Funciones y su representacion}
 		\subsubsection{Dominio,codominio rango}
 			Definicion de funcion $F$ en un conjunto $D$, llamado dominio a otro conjunto $Y$ llamado codominio (rango) es una regla que asigna a acada elemento  $X \exists D$ un unico elemento $f(x)  fy$
@@ -136,7 +137,7 @@ $F(x)=2x$\\
 	
 \begin{tabular}{|c|c|c|c|c|c|c|}
 	\hline
-	$X$&$-3$&$-2$&$-1$&$0$&$1$ & $2$\\
+	$x$&$-3$&$-2$&$-1$&$0$&$1$ & $2$\\
 	\hline
 	$F(x)$&$-6$&$-4$&$-2$&$0$ & $2$&$4$\\		
 	\hline		
@@ -266,10 +267,10 @@ $f(x)=-2y=-8$\\
 	\end{tikzpicture}\\
 	
 }
-$F(x)=x^2$\\
+$f(x)=x^2$\\
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 	\hline
-	$X$&$-2$&$0$&$1$&$2$&$3$\\
+	$xf$&$-2$&$0$&$1$&$2$&$3$\\
 	\hline
 		$f(x)$&$4$&$1$&$0$&$6$&$6$\\
 		\hline
@@ -306,7 +307,9 @@ $f(3)=3^{2}=4$\\
 
 }
 \newpage
-\section{Operaciones de funciones }
+\subsection{Operaciones de funciones }
+\subsubsection{Operaciones fundamentales}
+\subsubsection{Composición de funciones.}
 Las operacioens de suma,resta.multiplicacion y division entre funciones son posibles y semejantes a las correspondientes efectados con los numeros\\
 Definicion:\\
 son $f$ y $g$ dos funciones y supongamos que $Df$ y $Dg$ denotan los dominios de $f$ y $g$ respectivamente .La funcion  $f$ y $g$ estan definidas por \\
@@ -346,13 +349,153 @@ son $f$ y $g$ dos funciones y supongamos que $Df$ y $Dg$ denotan los dominios de
 				$(3x-7)\cdot (4x+3)$\\
 				$12x^{2}-28-9x-21$\\
 				$12x^{2}-19x-21$\\
+	}
+	
+	
+	\item   {\center $\frac{g}{g}(x)=\frac{f(x)}{g(x)}=g(x)\neq 0$\\
+		$=\frac{4x+3}{3x-7}$\\
+		
+
+	}
+	\item {\center $\frac{g}{f}(x)=\frac{g(x)}{f(x)}=\frac{3x-7}{4x+3}$\\
+	}
+
+\end{enumerate}
+\newpage
+{\centering\emph{Ejercicios}\\
+}
+
+
+\begin{enumerate}
+	\item {\center $f(x)=x-3$\\
+	}
+	\item{\center$g(x)=x^{2}+x-12$\\
 		
 	
 	
 	
 	}
+\end{enumerate}
+
+
+\begin{enumerate}
+\item {$(f+g)(x)=x-3+x^{2}+x-12$\\
+	$x^{2}+2x-15$\\
+	
+	
+	
+	
+	}
+	\item {$(f-g)(x)=(x-3)-(x^{2}+x-12)$\\
+		$x-3-x^{2}-x+12$\\
+		$=-x^{2}+9$\\
+	}
+\item	{$(g-f)(x)=x^{2}+x-12-(x-3)$\\
+	$x^{2}+x-12-x+3$\\
+	
+	$x^2+x-12-x+3$\\
+	$x^{x}-9$
+
+}
+\item {$(g\cdot f)(x)=(x-3)(x^{2}+x-12)$\\
+	$x^{3}+x^{2}-12x$\\
+			$-3x^{2}-3x+36$\\
+			$=x^{3}-2x^{2}-15x+36$
+
+
+
+}
+\item {$(\frac{f}{g})(x)=\frac{x-3}{x^{2}+x-12}=$\\
+	$\frac{x-3}{(x-3)(x+4)}$\\
+	=$\frac{1}{x+4}$\\
+	
+	
+	
+}
+\item {$(\frac{g}{f})(x)=\frac{x^{2}+x-12}{x-3}=$\\
+	$\frac{\cancel{(x-3)}(x-4)}{\cancel{(x-3)}}$
+	
+
+
+
+}
+	
+\end{enumerate}
+\newpage
+{\centering\emph{Ejercicios}\\
+}
+
+\begin{enumerate}
+	
+	
+\item {\center $f(x)=2x+4$\\
+	}
+	\item {\center$f(g)=x-10$\\
+	}
 
 \end{enumerate}
+
+\begin{enumerate}
+\item{$(f-g)(x)=2x+4-(x-10)$\\
+	$2x+4-x+10$\\
+	$x+14$
+	
+}
+\item {$(g-f)(x)=x-10-1(2x+4)$\\
+	$x-10-2x+4$\\
+	$-x-14$\\
+	
+	
+	
+}
+\item {$(f+g)(x)=2x+4+x+10=3x-6$\\
+}
+\item {$(\frac{f}{g})(x)=\frac{f(x)}{g(x)}=$\\
+	$\frac{2x+4}{x-10}$\\
+
+}
+\item {$(\frac{g}{f})(x)=\frac{g(x)}{f(x)}=$\\
+	$\frac{x-10}{2x+4}$\\
+}
+
+\item {$f\cdot g (x)=f(x)\cdot g(x)=$\\
+		$=(2x+4)(x-10)=$\\
+		$2x^{2}-20x+4-40$\\
+		$2x^{2}-16-40$
+		
+
+
+
+
+}
+
+
+
+
+
+\end{enumerate}
+\newpage 
+\section{title}
+\newpage
+\section{Derivadas}
+\subsection{ Definición de la derivada.}
+\emph{Derivada}\\
+Derivada es una función de una variable es el limite de la razón de incremento de la función la incremento de la variable independiente cuando este tiende a $0$. \\
+Cuando el limite de esta razón existe , se dice que la función es desiderable o que tienen una derivada .\\
+La función puede darse mediante símbolos , en la forma siguiente\\
+{\center $y=f(x)$\\}
+símbolos para representar la derivada puesto que $ \triangle y$ y $\triangle x$ son siempre cantidades finitas y tienen valores definidos la expresión es la siguiente.\\
+{\center $\frac{\triangle y} {\triangle x}$\\}
+\vspace{1cm}
+{\center \emph{Formula}$=\frac{f(x+\triangle x)-f(x)}{\triangle x}$\hspace{1cm}$\triangle x\rightarrow 0$\\
+}
+
+\[
+\lim_{\triangle x \to 0}{\frac{f(x+\triangle x=)-f(x)}{\triangle x}}
+\]\hspace{1cm} \begin{enumerate}
+\item {$f\prime(x)$}
+\end{enumerate}
+
 
 			
 			

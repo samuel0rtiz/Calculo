@@ -1,5 +1,10 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Unidad I}{1}{}%
+\contentsline {section}{\numberline {1}Funciones I}{1}{}%
 \contentsline {subsection}{\numberline {1.1}Tipos de Funciones y su representacion}{1}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Dominio,codominio rango}{1}{}%
-\contentsline {section}{\numberline {2}Operaciones de funciones }{4}{}%
+\contentsline {subsection}{\numberline {1.2}Operaciones de funciones }{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Operaciones fundamentales}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Composición de funciones.}{4}{}%
+\contentsline {section}{\numberline {2}title}{7}{}%
+\contentsline {section}{\numberline {3}Derivadas}{8}{}%
+\contentsline {subsection}{\numberline {3.1} Definición de la derivada.}{8}{}%
